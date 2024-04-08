@@ -3,7 +3,12 @@ function getFullYear() {
 }
 
 function getFooterCopy(isIndex) {
-  return isIndex ? "Holberton School" : "Holberton School main dashboard";
+  if (isIndex) {
+    return "Holberton School";
+  } else {
+    return "Holberton School main dashboard";
+  }
+  // return isIndex ? "Holberton School" : "Holberton School main dashboard";
 }
 
 module.exports = {
